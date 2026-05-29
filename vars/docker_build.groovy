@@ -1,4 +1,4 @@
 // Define function
-def call("wanderlust-backend-beta", "${params.BACKEND_DOCKER_TAG}", "pranavthakare74"){
+def call(String ProjectName, String ImageTag, String DockerHubUser){
   sh "docker build -t ${DockerHubUser}/${ProjectName}:${ImageTag} ."
 }
