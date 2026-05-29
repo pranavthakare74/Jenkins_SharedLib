@@ -1,3 +1,3 @@
-def call("https://github.com/pranavthakare74/Wanderlust-Mega-Project.git","main"){
+def call(String GitUrl, String GitBranch){
   git url: "${GitUrl}", branch: "${GitBranch}"
 }
